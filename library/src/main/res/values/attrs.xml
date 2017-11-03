@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="RectProgressBar">
+
+        <attr name="rectNumber" format="integer"/>
+
+        <attr name="rectColor" format="color"/>
+
+    </declare-styleable>
+</resources>
