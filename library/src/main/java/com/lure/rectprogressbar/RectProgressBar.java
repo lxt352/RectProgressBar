@@ -77,11 +77,12 @@ public class RectProgressBar extends View {
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
-        width = 2 * rectWidth + rectMargin * (number - 1);
-        height = rectHeight;
-        width = measureSize(width, widthMeasureSpec);
-        height = measureSize(height, heightMeasureSpec);
-        height = height > rectHeight ? rectHeight : height;
+        int desiredWidth = number * rectWidth + rectMargin * (number - 1);
+        int desiredHeight = rectHeight;
+        width = measureSize(desiredWidth, widthMeasureSpec);
+        height = measureSize(desiredHeight, heightMeasureSpec);
+        width = width > desiredWidth ? desiredWidth : width;
+        height = height > desiredHeight ? desiredHeight : height;
         setMeasuredDimension(width, height);
         initPaint();
     }

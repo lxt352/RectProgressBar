@@ -9,7 +9,7 @@
     tools:showIn="@layout/activity_main">
 
     <com.lure.rectprogressbar.RectProgressBar
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:rectColor="@color/colorAccent"
         app:rectNumber="6" />
