@@ -1,6 +1,5 @@
 package com.lure.rectprogressbar;
 
-import android.util.Log;
 import android.view.View.MeasureSpec;
 
 /**
@@ -9,8 +8,6 @@ import android.view.View.MeasureSpec;
  */
 
 class Utils {
-
-    private static final String TAG = Utils.class.getSimpleName();
 
     static int measureSize(int size, int measureSpec) {
         int mode = MeasureSpec.getMode(measureSpec);
