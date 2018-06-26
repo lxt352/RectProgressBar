@@ -173,7 +173,7 @@ public class RectProgressBar extends View {
                 animator.cancel();
     }
 
-    interface OnInvalidatedListener {
+    private interface OnInvalidatedListener {
 
         void onInvalidated();
     }
